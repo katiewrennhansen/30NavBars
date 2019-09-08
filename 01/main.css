@@ -1,0 +1,104 @@
+html {
+box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+box-sizing: inherit;
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    background: aliceblue;
+}
+
+.nav-links a:hover,
+i {
+    color: rgb(114, 160, 245);
+}
+
+a {
+    color: rgb(235, 233, 233);
+    text-decoration: none;
+}
+
+nav {
+    font-size: 18px;
+    background: rgb(55, 55, 55);
+}
+
+i {
+    font-size: 30px;
+}
+
+.igloo {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.brand-links {
+    padding-top: 25px;
+    text-align: center;
+    font-family: 'Concert One', sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-links a:hover {
+    transition-duration: 300ms;
+    transition-delay: 50ms;
+    transition-timing-function: ease-in-out;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    margin: 15px;
+}
+
+h1 {
+    margin: 0 auto;
+    padding-top: 25vh;
+    text-align: center;
+    font-size: 40px;
+    width: 90%;
+}
+
+@media (min-width: 400px) {
+    ul {
+        display: flex;
+}
+@media (min-width: 768px) {
+    .brand-links {
+        padding-top: 16px;
+        position: absolute;
+        top: 10px;
+        left: 50px;
+    }
+    .nav-links {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 50px;
+    }
+    li {
+        margin: 18px 30px 0;
+    }
+}
+@media (min-width: 1200px) {
+    nav {
+        font-size: 20px;
+    }
+    li {
+        margin: 15px 50px 0;
+    }
+}
