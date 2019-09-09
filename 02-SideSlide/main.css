@@ -1,0 +1,192 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+} 
+  
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: wheat;
+}
+
+nav {
+    overflow: hidden;
+    background: rgb(244, 244, 244);
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.company {
+    padding: 30px;
+    font-size: 30px;
+}
+
+i {
+    color: rgb(55, 162, 126);
+    margin-right: 20px;
+}
+
+a,
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+h1,
+.company a {
+    font-family: 'Playfair Display', serif;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    background: none;
+    border: none;
+}
+
+.burger-bar {
+    background-color: black;
+    width: 25px;
+    height: 3px;
+    margin: 6px 5px;
+    border-radius: 4px;
+    transition-duration: 300ms;
+
+}
+
+.cross > #bb-two {
+    display: none;
+}
+
+.cross > #bb-one {
+    transform: rotate(45deg) translate(6px, 7px);
+    width: 30px;
+    transition-duration: 300ms;
+}
+
+.cross > #bb-three {
+    transform: rotate(-45deg);
+    width: 30px;
+    transition-duration: 300ms;
+}
+
+.collapse-content {
+    height: 0;
+    background: rgb(55, 162, 126);
+    font-size: 30px;
+    padding: 0 20px 0;
+    transform: translateX(1000px);
+    transition-duration: 00ms;
+    opacity: 0;
+    overflow: hidden;
+}
+
+ul {
+    padding-top: 6vh;
+}
+
+.toggle {
+    height: 90vh;
+    transform: translateX(0px);
+    transition-duration: 300ms;
+    opacity: 1;
+}
+
+.collapse-content li {
+    padding: 15px;
+    opacity: 1;
+}
+
+.nav-hr {
+    width: 30%;
+    border: 0; 
+    border-top: 1px solid rgba(244, 244, 244, 0.25);
+}
+
+/* BODY STYLES */
+main {
+    width: 90%;
+    margin: 160px auto 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+.main-hr {
+    width: 60%;
+    border: 0; 
+    border-top: 1px solid green;
+}
+
+main p {
+    font-size: 20px;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width: 768px){
+    h1 {
+        font-size: 45px;
+    }
+    main p {
+        font-size: 25px;
+    }
+}
+@media (min-width: 1200px){
+    .toggle-button {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .company {
+        position: absolute;
+        top: 18px;
+        left: 50px;
+        padding: 0px;
+    }
+    .collapse-content {
+        height: 80px;
+        transform: translateX(0px);
+        transition-duration: 0ms;
+        opacity: 1;
+        font-size: 20px;
+        background-color: rgba(255, 255, 255, 0);
+        display: flex;
+        padding-right: 50px;
+    }
+    ul {
+        padding-top: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    main p {
+        font-size: 30px;
+    }
+}

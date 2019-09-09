@@ -11,3 +11,10 @@ Sept 8, 2019
 I am starting with a simple - non collapsable nav bar just to get practice positioning the 
 elements. I will use flexbox to place all of my components. This nav is designed for a simple
 site with smaller navigation needs. It will be responsive for each screen size.
+
+### Day 2
+Sept 9, 2019
+My second navbar is collapsed up until a display of 768px has been hit. This nav uses an 
+animation on the toggle button to make an X while the collapsed nav is open. The collapsed
+nav also takes up the entirity of the screen while it is open. When the screen size passes
+768px, then the nav uses flexbox to stretch across the screen at all times.
