@@ -48,7 +48,6 @@ nav {
 .mobile-nav {
     background: linear-gradient(to bottom, rgb(28, 28, 28), rgba(38, 38, 38, 1));
     width: 100%;
-    
 }
 
 ul {
@@ -137,7 +136,7 @@ h1 {
         position: static;
         opacity: 1;
         transform: translateY(0px);
-        transition: none;
+        transition: 0s;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(38, 38, 38, 1));
         font-size: 18px;
     }
