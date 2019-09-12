@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(247, 234, 214);
+}
+
+.company-info a,
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+}
+
+.collapse-content a {
+    font-family: Montserrat, sans-serif;
+    font-weight: 200;
+}
+
+a {
+    color: rgb(232, 232, 232);
+    text-decoration: none;
+}
+
+.collapse-content li:hover a {
+    color: white;
+}
+
+button {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 12px;
+    right: 30px;
+    z-index: 3;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.mobile-nav {
+    background: linear-gradient(to bottom, rgb(28, 28, 28), rgba(38, 38, 38, 1));
+    width: 100%;
+    
+}
+
+ul {
+    list-style: none;
+    padding: 20px 0;
+}
+
+li {
+    padding: 10px 30px;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+}
+
+.company-info {
+    padding: 14px 30px;
+    font-size: 25px;
+    letter-spacing: 0.05em;
+}
+
+.company-info a {
+    padding-right: 20px;
+}
+
+.burger-bar {
+    background-color: rgb(232, 232, 232);
+    height: 3px;
+    width: 25px;
+    margin: 6px 0;
+}
+
+.show.collapse-content{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 300ms ease-in-out;
+    background-color: rgb(98, 120, 98);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+.collapse-content {
+    text-transform: uppercase;
+    transition: 300ms ease-in-out;
+    background-color: rgb(98, 120, 98);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-200px);
+}
+
+h1 {
+    margin: 40vh auto 0;
+    text-align: center;
+    width: 80%;
+    font-size: 40px;
+}
+
+@media (min-width: 1200px){
+    button {
+        display: none;
+    }
+    nav {
+        display: flex;
+        text-align: right;
+        align-items: center;
+        justify-content: flex-end;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(38, 38, 38, 1));
+    }
+    ul {
+        display: flex;
+        padding: 15px 30px;
+        justify-content: flex-end;
+    }
+    li {
+        padding-left: 25px;
+        font-size: 17px;
+    }
+    .company-info {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        padding: 0;
+    }
+    .collapse-content {
+        position: static;
+        opacity: 1;
+        transform: translateY(0px);
+        transition: none;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(38, 38, 38, 1));
+        font-size: 18px;
+    }
+
+}
