@@ -3,8 +3,7 @@ ___
 The goal of this project is to develop my skills at creating responsive navbars from scratch.
 This is always something that I have been fascinated with learning but have always struggled
 to figure out. Each time I come to the point of building a navbar in a project, I can't seem
-to get it right and I want to change that. In this 30 day project, I will design and build 
-30 unique navbars to build my skills at creating mobile-first, responsive navbars.
+to get it right and I want to change that. In this project, I will design and build unique navbars to build my skills at creating mobile-first, responsive navbars.
 
 ### Day 1
 Sept 8, 2019  
