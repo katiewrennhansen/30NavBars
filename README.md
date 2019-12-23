@@ -1,4 +1,4 @@
-## 30 navbars
+## Responsive Navbars
 ___
 The goal of this project is to develop my skills at creating responsive navbars from scratch.
 This is always something that I have been fascinated with learning but have always struggled
